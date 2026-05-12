@@ -1,0 +1,125 @@
+body {
+  font-family: Arial;
+  background: #f4f6f8;
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+body {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  background: white;
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  perspective: 1000px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+   transform: translateY(-10px) rotateX(5deg);
+  transition: 0.4s ease;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+button {
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+tr {
+  animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.logout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #dc3545;
+  color: white;
+}
+
+.logout:hover {
+  background: #b02a37;
+}
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .card {
+  background: #1f1f1f;
+}
+
+.dark table, 
+.dark th, 
+.dark td {
+  border-color: #444;
+}
+.d{
+    background-color: transparent;
+    margin-left: 80%;
+    margin-top: 10px;
+}
+.d:hover{
+    background-color: #d8cdcd;
+}
+.app-title {
+  margin-bottom: 5px;
+  color: #007bff;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}

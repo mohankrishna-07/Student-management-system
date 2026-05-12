@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="toggleDarkMode()" class = "d">🌙</button>
+    <button class="logout" onclick="logout()">Logout</button>
+
+    <h3 id="welcome"></h3>
+
+
+    
+    <h2>Student Management System</h2>
+    
+    <div class="card">
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="text" id="roll" placeholder="Roll Number" required>
+        <input type="text" id="dept" placeholder="Department" required>
+        <input type ="email"id="mail" placeholder="Email" required>
+        <input type="text"  id="num" placeholder="phn No" required>
+
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+    
+    <div class="card">
+        <input type="text" id="search" placeholder="Search by Roll" onkeyup="searchStudent()">
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>phone</th>
+                <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="studentList"></tbody>
+</table>
+<script src="script.js"></script>
+
+</body>
+</html>
